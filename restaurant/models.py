@@ -30,6 +30,7 @@ class Menu(models.Model):
 
     class Meta:
         unique_together = ("date", "restaurant")
+        ordering = ["-date"]
 
     def __str__(self):
         return self.dishes
