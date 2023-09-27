@@ -1,9 +1,8 @@
 from django.db.models import Count
 from django.utils import timezone
-from rest_framework import mixins, status
+from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework.viewsets import GenericViewSet
 from rest_framework.permissions import IsAuthenticated
 
 from restaurant.models import Menu
